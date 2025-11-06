@@ -13,6 +13,8 @@ public class ExcelUtility {
 		Workbook wb = WorkbookFactory.create(fis);
 		String data = wb.getSheet(sheetName).getRow(rowNum).getCell(cellNum).getStringCellValue();
 		wb.close();
+		System.out.println("data");
+
 		return data;
 	}
 	
